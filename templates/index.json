@@ -1,0 +1,455 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-skeleton",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "8172f3cf-df45-4f4f-9088-eb657c06ce01": {
+      "type": "Richtext-section-one",
+      "settings": {
+        "section_background": "#b3caf2",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "main_heading": "Truly love the skin you're in",
+        "heading_font_size": 21,
+        "heading_font_weight": 350,
+        "paragraph_text": "<p>We have always believed in understanding the fundamentals of everything we do in life. It’s a strong habit that can do wonders for your day-to-day decision-making and will help you go places in the future. Most of us fail to even think of the impact our day-to-day decision-making does on our future and this is why we will learn the fundamentals of the platform we will be working on before we kickstart our professional journey. Those who believe, are the ones who do, and to believe, we need to understand the fundamentals of everything.<\/p>",
+        "button_text": "Discover our Catalog",
+        "button_link": "shopify:\/\/collections\/all",
+        "button_background_color": "#f4a142",
+        "button_text_color": "#ffffff",
+        "button_hover_color": "#f1a487",
+        "text_alignment": "center"
+      }
+    },
+    "e8e4f9d0-9095-4ef9-bbc0-1f902a90c01f": {
+      "type": "image-with-text-two",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/picking-strawberries.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/three-spanakopita-spirals-on-textured-plate.jpg",
+        "image_position": "direction-row",
+        "caption_text": "Cleansers",
+        "heading_text": "ONLY THE BEST",
+        "paragraph_text": "<p> We're humans too and we understand that skin care and cosmetics should rejuvenate and rehydrate in the short and long run.<\/p>",
+        "paragraph_text_color": "#9e3838",
+        "button_text": "Explore our shop",
+        "button_link": "shopify:\/\/pages\/contact",
+        "text_alignment": "text-center"
+      }
+    },
+    "c9771602-62fc-46da-b3a7-657f17e18618": {
+      "type": "image-gallery-Three",
+      "blocks": {
+        "09c0cf97-1bc4-4145-bc36-25d8aa33a6d0": {
+          "type": "image-gallery",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/knife-slices-a-zucchini-in-half.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/knife-slices-a-zucchini-in-half.jpg",
+            "heading_text": "Beautiful,natural skin",
+            "heading_text_color": "",
+            "paragraph_text": "<p>100% organic products to rejenevate and rehydrate<\/p>",
+            "paragraph_text_color": "",
+            "button_text": "Shop",
+            "button_link": "shopify:\/\/pages\/contact",
+            "text_alignment": "center",
+            "content_position": "align-end justify-end"
+          }
+        },
+        "b023c048-af69-45ea-8694-8f23c9b01d80": {
+          "type": "image-gallery",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hand-holds-rainbow-carrots.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/hand-holds-rainbow-carrots.jpg",
+            "heading_text": "Beautiful,natural skin",
+            "heading_text_color": "",
+            "paragraph_text": "<p>100% organic products to rejenevate and rehydrate<\/p>",
+            "paragraph_text_color": "",
+            "button_text": "Eat It",
+            "button_link": "shopify:\/\/pages\/contact",
+            "text_alignment": "center",
+            "content_position": "align-center justify-center"
+          }
+        },
+        "e44ade01-6da6-4393-be2f-95d1df9f79f5": {
+          "type": "image-gallery",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hand-holding-a-mushroom.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/hand-holding-a-mushroom.jpg",
+            "heading_text": "Beautiful,natural skin",
+            "heading_text_color": "",
+            "paragraph_text": "<p>100% organic products to rejenevate and rehydrate<\/p>",
+            "paragraph_text_color": "",
+            "button_text": "Taste It",
+            "button_link": "shopify:\/\/blogs\/news",
+            "text_alignment": "center",
+            "content_position": "align-start justify-start"
+          }
+        }
+      },
+      "block_order": [
+        "09c0cf97-1bc4-4145-bc36-25d8aa33a6d0",
+        "b023c048-af69-45ea-8694-8f23c9b01d80",
+        "e44ade01-6da6-4393-be2f-95d1df9f79f5"
+      ],
+      "settings": {
+      }
+    },
+    "ed38f80b-24eb-4a8d-992b-98868e832f9f": {
+      "type": "Image-Overlay-Four",
+      "blocks": {
+        "e421217d-9a21-4b17-8584-be0856470c97": {
+          "type": "image-overlay",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cafe-cup-on-wood-table.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/hand-holding-a-mushroom.jpg",
+            "heading_text": "CLEAN AND AFFORDABLE BEAUTY",
+            "heading_text_color": "",
+            "caption_text": "Beautiful,natural skin",
+            "caption_text_color": "",
+            "paragraph_text": "<p>100% organic products to rejenevate and rehydrate<\/p>",
+            "paragraph_text_color": "",
+            "button_text": "",
+            "button_link": "",
+            "text_alignment": "center",
+            "content_position": "align-start justify-start"
+          }
+        },
+        "d9ef9ed0-ad11-43a1-9c5d-69fdd5df051c": {
+          "type": "image-overlay",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/a-woman-in-her-shop.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/woman-relazing-and-journalling-on-couch.jpg",
+            "heading_text": "CLEAN AND AFFORDABLE BEAUTY",
+            "heading_text_color": "",
+            "caption_text": "Beautiful,natural skin",
+            "caption_text_color": "",
+            "paragraph_text": "<p>100% organic products to rejenevate and rehydrate<\/p>",
+            "paragraph_text_color": "",
+            "button_text": "",
+            "button_link": "",
+            "text_alignment": "center",
+            "content_position": "align-start justify-start"
+          }
+        }
+      },
+      "block_order": [
+        "e421217d-9a21-4b17-8584-be0856470c97",
+        "d9ef9ed0-ad11-43a1-9c5d-69fdd5df051c"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "5fa3777d-d0e2-49f9-854b-3a238607d4fb": {
+      "type": "Newsletter-Section",
+      "settings": {
+        "background_color": "",
+        "sub_heading": "Signup now",
+        "heading": "Get the newsletter",
+        "text_alignment": "center"
+      }
+    },
+    "59545619-2cac-413d-bff9-a9310435f3c9": {
+      "type": "Logo-Section",
+      "blocks": {
+        "cb0604f6-c982-4d80-a60c-d07486fbe621": {
+          "type": "logo-list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image8.jpg",
+            "image_link": ""
+          }
+        },
+        "990ed65b-b5ed-4957-b45a-80e1b333faaf": {
+          "type": "logo-list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image17.jpg",
+            "image_link": ""
+          }
+        },
+        "cec1dc03-b093-40e9-a87a-3f7b2b744332": {
+          "type": "logo-list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image47.webp",
+            "image_link": ""
+          }
+        },
+        "b7a019c8-cd3a-4e69-aa8a-dc705c55daf8": {
+          "type": "logo-list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image24.jpg",
+            "image_link": ""
+          }
+        },
+        "639ddced-99a6-4646-a58d-11174bb841ec": {
+          "type": "logo-list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image21.webp",
+            "image_link": ""
+          }
+        },
+        "312fb2b8-6a0a-4edb-917a-cf9764eec80d": {
+          "type": "logo-list",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image54.webp",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "cb0604f6-c982-4d80-a60c-d07486fbe621",
+        "990ed65b-b5ed-4957-b45a-80e1b333faaf",
+        "cec1dc03-b093-40e9-a87a-3f7b2b744332",
+        "b7a019c8-cd3a-4e69-aa8a-dc705c55daf8",
+        "639ddced-99a6-4646-a58d-11174bb841ec",
+        "312fb2b8-6a0a-4edb-917a-cf9764eec80d"
+      ],
+      "settings": {
+        "section_background": "#c5c5c5",
+        "heading_text": "Logo List"
+      }
+    },
+    "d9adca2e-ac74-44ed-a208-2ef58ddc9bc3": {
+      "type": "usp-Section",
+      "blocks": {
+        "251d19a6-dd61-420c-ad4c-91b6eb7bb2d0": {
+          "type": "usp-item",
+          "settings": {
+            "logo": "<svg height=\"40\" viewbox=\"0 0 64 64\" width=\"40\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><g style=\"fill:#d9a0a9 ;stroke:#202020;stroke-miterlimit:10;stroke-width:2;stroke-linejoin:round;stroke-linecap:round\"><path d=\"m36 36h12v22h-12z\"><\/path><path d=\"m56 30v28h-48v-28\"><\/path><path d=\"m16 36h14v12h-14z\"><\/path><path d=\"m52.6 6h-41.2l-9.4 16.5a7.5 7.5 0 0 0 15 0 7.5 7.5 0 0 0 15 0 7.5 7.5 0 0 0 15 0 7.5 7.5 0 0 0 15 0zm-50.6 16h60m-30-16v16.5m-15 0 5-16.5m25 16.5-5-16.5\"><\/path><\/g><\/svg>",
+            "heading_text": "<p>Heading text<\/p>",
+            "heading_text_color": "#000000",
+            "sub_heading_text": "<p>Sub heading text<\/p>",
+            "sub_heading_text_color": "#000000"
+          }
+        },
+        "1b951d08-a97b-4a2d-8f1a-32d31119b564": {
+          "type": "usp-item",
+          "settings": {
+            "logo": "<svg height=\"40\" viewbox=\"0 0 64 64\" width=\"40\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><g style=\"fill:#d9a0a9 ;stroke:#202020;stroke-miterlimit:10;stroke-width:2;stroke-linejoin:round;stroke-linecap:round\"><path d=\"m36 36h12v22h-12z\"><\/path><path d=\"m56 30v28h-48v-28\"><\/path><path d=\"m16 36h14v12h-14z\"><\/path><path d=\"m52.6 6h-41.2l-9.4 16.5a7.5 7.5 0 0 0 15 0 7.5 7.5 0 0 0 15 0 7.5 7.5 0 0 0 15 0 7.5 7.5 0 0 0 15 0zm-50.6 16h60m-30-16v16.5m-15 0 5-16.5m25 16.5-5-16.5\"><\/path><\/g><\/svg>",
+            "heading_text": "<p>Heading text<\/p>",
+            "heading_text_color": "#000000",
+            "sub_heading_text": "<p>Sub heading text<\/p>",
+            "sub_heading_text_color": "#000000"
+          }
+        },
+        "476121e2-c14e-4a21-85d3-ce8ee7e2a07d": {
+          "type": "usp-item",
+          "settings": {
+            "logo": "<svg height=\"40\" viewbox=\"0 0 64 64\" width=\"40\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><g style=\"fill:#d9a0a9 ;stroke:#202020;stroke-miterlimit:10;stroke-width:2;stroke-linejoin:round;stroke-linecap:round\"><path d=\"m36 36h12v22h-12z\"><\/path><path d=\"m56 30v28h-48v-28\"><\/path><path d=\"m16 36h14v12h-14z\"><\/path><path d=\"m52.6 6h-41.2l-9.4 16.5a7.5 7.5 0 0 0 15 0 7.5 7.5 0 0 0 15 0 7.5 7.5 0 0 0 15 0 7.5 7.5 0 0 0 15 0zm-50.6 16h60m-30-16v16.5m-15 0 5-16.5m25 16.5-5-16.5\"><\/path><\/g><\/svg>",
+            "heading_text": "<p>Heading text<\/p>",
+            "heading_text_color": "#000000",
+            "sub_heading_text": "<p>Sub heading text<\/p>",
+            "sub_heading_text_color": "#000000"
+          }
+        },
+        "24b41d3d-03e1-4039-b78c-0266640e5f5d": {
+          "type": "usp-item",
+          "settings": {
+            "logo": "<svg height=\"40\" viewbox=\"0 0 64 64\" width=\"40\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><g style=\"fill:#d9a0a9 ;stroke:#202020;stroke-miterlimit:10;stroke-width:2;stroke-linejoin:round;stroke-linecap:round\"><path d=\"m36 36h12v22h-12z\"><\/path><path d=\"m56 30v28h-48v-28\"><\/path><path d=\"m16 36h14v12h-14z\"><\/path><path d=\"m52.6 6h-41.2l-9.4 16.5a7.5 7.5 0 0 0 15 0 7.5 7.5 0 0 0 15 0 7.5 7.5 0 0 0 15 0 7.5 7.5 0 0 0 15 0zm-50.6 16h60m-30-16v16.5m-15 0 5-16.5m25 16.5-5-16.5\"><\/path><\/g><\/svg>",
+            "heading_text": "<p>Heading text<\/p>",
+            "heading_text_color": "#000000",
+            "sub_heading_text": "<p>Sub heading text<\/p>",
+            "sub_heading_text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "251d19a6-dd61-420c-ad4c-91b6eb7bb2d0",
+        "1b951d08-a97b-4a2d-8f1a-32d31119b564",
+        "476121e2-c14e-4a21-85d3-ce8ee7e2a07d",
+        "24b41d3d-03e1-4039-b78c-0266640e5f5d"
+      ],
+      "settings": {
+        "heading_text": "Ups Section",
+        "background_color": ""
+      }
+    },
+    "73075f7f-a5bb-4763-b369-c33a9da8c9cc": {
+      "type": "Testimonials-Section",
+      "blocks": {
+        "fd2b1f0f-90c1-4ded-a2f9-76a0aae7d974": {
+          "type": "testimonial-content",
+          "settings": {
+            "testimonials_section_image": "shopify:\/\/shop_images\/3_30e4f5fc-987a-4931-8d17-19d4b6ba9b6f.jpg",
+            "review_start": "1",
+            "paragraph_text": "<p>It's Mecca of all the sports enthusiastic. One stopt shop for all your sports need. the variety of equipments ypu need for any of your favourites sprots is there.The quantity of product is also good<\/p>",
+            "author_name": "<p>John smith\/London<\/p>"
+          }
+        },
+        "4877dc77-bb18-4ece-a045-70470e719584": {
+          "type": "testimonial-content",
+          "settings": {
+            "testimonials_section_image": "shopify:\/\/shop_images\/3_af759649-fe6e-49be-8029-97b6569c57f3.webp",
+            "review_start": "4",
+            "paragraph_text": "<p>It's Mecca of all the sports enthusiastic. One stopt shop for all your sports need. the variety of equipments ypu need for any of your favourites sprots is there.The quantity of product is also good<\/p>",
+            "author_name": "<p>John smith\/London<\/p>"
+          }
+        },
+        "20a24fba-aa42-49b8-98e9-16f2cce4bf7d": {
+          "type": "testimonial-content",
+          "settings": {
+            "testimonials_section_image": "shopify:\/\/shop_images\/1_547aa462-3be9-492c-a678-d2ffd1bcc08c.webp",
+            "review_start": "4",
+            "paragraph_text": "<p>It's Mecca of all the sports enthusiastic. One stopt shop for all your sports need. the variety of equipments ypu need for any of your favourites sprots is there.The quantity of product is also good<\/p>",
+            "author_name": "<p>John smith\/London<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "fd2b1f0f-90c1-4ded-a2f9-76a0aae7d974",
+        "4877dc77-bb18-4ece-a045-70470e719584",
+        "20a24fba-aa42-49b8-98e9-16f2cce4bf7d"
+      ],
+      "settings": {
+        "heading_text": "WHAT YOUR CLIENTS SAY"
+      }
+    },
+    "e4b8c5ee-491d-4c00-91d8-d9913dfbe6ee": {
+      "type": "Featured-blogs-Section",
+      "settings": {
+        "heading_text": "Blog Posts",
+        "blog": "news"
+      }
+    },
+    "04c6a914-2cdd-4e42-9a73-f92029fd78e4": {
+      "type": "Image-Overlay-Four",
+      "blocks": {
+        "9585e558-0d46-4ac4-8f7e-482099ef6bf6": {
+          "type": "image-overlay",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/main-c41920x800.webp",
+            "heading_text": "CLEAN AND AFFORDABLE BEAUTY",
+            "heading_text_color": "#ffffff",
+            "caption_text": "Beautiful,natural skin",
+            "caption_text_color": "#ffffff",
+            "paragraph_text": "<p>100% organic products to rejenevate and rehydrate<\/p>",
+            "paragraph_text_color": "#ffffff",
+            "button_text": "Shop Now",
+            "button_link": "shopify:\/\/pages\/contact",
+            "text_alignment": "left",
+            "content_position": "align-end justify-start"
+          }
+        },
+        "be86f066-4f88-456a-9369-9cf0fbaf12b0": {
+          "type": "image-overlay",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/main-c31920x800.webp",
+            "heading_text": "CLEAN AND AFFORDABLE BEAUTY",
+            "heading_text_color": "",
+            "caption_text": "Beautiful,natural skin",
+            "caption_text_color": "",
+            "paragraph_text": "<p>100% organic products to rejenevate and rehydrate<\/p>",
+            "paragraph_text_color": "",
+            "button_text": "",
+            "button_link": "",
+            "text_alignment": "center",
+            "content_position": "align-start justify-start"
+          }
+        },
+        "13a6c82c-5e4c-43aa-9f45-7d150a6401f0": {
+          "type": "image-overlay",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/main-c1_1920x800_fa4c41d7-16ca-4131-b734-dd18d7c1f9c2.webp",
+            "heading_text": "CLEAN AND AFFORDABLE BEAUTY",
+            "heading_text_color": "",
+            "caption_text": "Beautiful,natural skin",
+            "caption_text_color": "",
+            "paragraph_text": "<p>100% organic products to rejenevate and rehydrate<\/p>",
+            "paragraph_text_color": "",
+            "button_text": "",
+            "button_link": "",
+            "text_alignment": "center",
+            "content_position": "align-start justify-start"
+          }
+        }
+      },
+      "block_order": [
+        "9585e558-0d46-4ac4-8f7e-482099ef6bf6",
+        "be86f066-4f88-456a-9369-9cf0fbaf12b0",
+        "13a6c82c-5e4c-43aa-9f45-7d150a6401f0"
+      ],
+      "settings": {
+      }
+    },
+    "23997219-adeb-4322-bb7e-cf67672c9314": {
+      "type": "collection-list",
+      "settings": {
+        "background_color": "#c19b9b",
+        "heading_text": "",
+        "heading_color": "#54e748",
+        "button_text": "",
+        "button_url": "",
+        "button_color": "",
+        "collection_list": [
+          "price-range",
+          "summer",
+          "t-shirt",
+          "watch",
+          "winter"
+        ]
+      }
+    },
+    "e37b154c-07a9-4571-b088-0f572c3e3d0f": {
+      "type": "usp-Section",
+      "blocks": {
+        "b17b75e7-b4a6-4b3f-a08a-10588d822475": {
+          "type": "usp-item",
+          "settings": {
+            "logo": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon--wide icon-arrow-right-long\" viewbox=\"0 0 21 10\">\n                <path d=\"m14.982 1.01.696-.717 3.803 3.691.011-.01.338.348.359.348-.012.01.012.011-.354.343-.343.353-.011-.011-3.803 3.692-.696-.718 3.266-3.17H.5v-1h17.748z\"><\/path>\n            <\/svg>",
+            "heading_text": "<p>Heading text<\/p>",
+            "heading_text_color": "#000000",
+            "sub_heading_text": "<p>Sub heading text<\/p>",
+            "sub_heading_text_color": "#000000"
+          }
+        },
+        "abc14645-e60f-4163-a5f0-9f6da0ae0b0d": {
+          "type": "usp-item",
+          "settings": {
+            "logo": "",
+            "heading_text": "<p>Heading text<\/p>",
+            "heading_text_color": "#000000",
+            "sub_heading_text": "<p>Sub heading text<\/p>",
+            "sub_heading_text_color": "#000000"
+          }
+        },
+        "ad9e969c-78e4-4288-a254-470ee23d76bc": {
+          "type": "usp-item",
+          "settings": {
+            "logo": "",
+            "heading_text": "<p>Heading text<\/p>",
+            "heading_text_color": "#000000",
+            "sub_heading_text": "<p>Sub heading text<\/p>",
+            "sub_heading_text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "b17b75e7-b4a6-4b3f-a08a-10588d822475",
+        "abc14645-e60f-4163-a5f0-9f6da0ae0b0d",
+        "ad9e969c-78e4-4288-a254-470ee23d76bc"
+      ],
+      "settings": {
+        "heading_text": "",
+        "background_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8172f3cf-df45-4f4f-9088-eb657c06ce01",
+    "e8e4f9d0-9095-4ef9-bbc0-1f902a90c01f",
+    "c9771602-62fc-46da-b3a7-657f17e18618",
+    "ed38f80b-24eb-4a8d-992b-98868e832f9f",
+    "5fa3777d-d0e2-49f9-854b-3a238607d4fb",
+    "59545619-2cac-413d-bff9-a9310435f3c9",
+    "d9adca2e-ac74-44ed-a208-2ef58ddc9bc3",
+    "73075f7f-a5bb-4763-b369-c33a9da8c9cc",
+    "e4b8c5ee-491d-4c00-91d8-d9913dfbe6ee",
+    "04c6a914-2cdd-4e42-9a73-f92029fd78e4",
+    "23997219-adeb-4322-bb7e-cf67672c9314",
+    "e37b154c-07a9-4571-b088-0f572c3e3d0f"
+  ]
+}

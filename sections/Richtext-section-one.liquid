@@ -1,0 +1,169 @@
+<div class="richtext richtext-{{ section.id }} section-{{ section.id }}-padding">
+  <div class="container">
+    <div class="richtext__wrapper {{ section.settings.text_alignment }}">
+      {% if section.settings.main_heading != blank %}
+        <h2 class="richtext__heading richtext__header-{{ section.id }}">{{ section.settings.main_heading }}</h2>
+      {% endif %}
+
+      {% if section.settings.paragraph_text != blank %}
+        <div class="richtext__paragraph">{{ section.settings.paragraph_text }}</div>
+      {% endif %}
+
+      {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+        <div class="richtext__button ">
+          <a class="custom-button btn-{{ section.id }}" href="{{ section.settings.button_link }}">
+            {{ section.settings.button_text }}
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% style %}
+  .richtext-{{ section.id }}{
+    background-color:{{section.settings.section_background}};
+  }
+
+  .richtext__header-{{ section.id }} {
+    font-size:{{section.settings.heading_font_size}}px;
+    font-weight:{{section.settings.heading_font_weight}};
+  }
+    .btn-{{ section.id }} {
+      background-color:{{section.settings.button_background_color}};
+      color:{{section.settings.button_text_color}};
+      padding:8px;
+      text-decoration: none;
+    }
+    .btn-{{section.id}}:hover {
+      background-color:{{section.settings.button_hover_color}};
+    }
+{% endstyle %}
+
+{% schema %}
+  {
+  "name": "Richtext Section One",
+  "tag" : "section",
+  "class" : "homepage-section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "section_background",
+      "label": "Section background",
+      "default": "#B3CAF2"
+    },
+     {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top ",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom ",
+      "default": 40
+    },
+    {
+      "type" : "header",
+      "content" : "Heading Setting"
+    },
+    {
+      "type": "text",
+      "id": "main_heading",
+      "label": "Heading text",
+      "default": "Truly love the skin you're in"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "label": "Font size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "heading_font_weight",
+      "min": 300,
+      "max": 800,
+      "step": 50,
+      "label": "Font size",
+      "default": 400
+    },
+     {
+      "type" : "header",
+      "content" : "Paragraph Setting"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph_text",
+      "label": "Paragraph text",
+      "default": "<p>We have always believed in understanding the fundamentals of everything we do in life. It’s a strong habit that can do wonders for your day-to-day decision-making and will help you go places in the future. Most of us fail to even think of the impact our day-to-day decision-making does on our future and this is why we will learn the fundamentals of the platform we will be working on before we kickstart our professional journey. Those who believe, are the ones who do, and to believe, we need to understand the fundamentals of everything.</p>"
+    },
+    {
+      "type" : "header",
+      "content" : "Button Settings"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type":"color",
+      "id":"button_background_color",
+      "label":"Button background color"
+    },
+    {
+      "type":"color",
+      "id":"button_text_color",
+      "label":"Button text color"
+    },
+    {
+      "type":"color",
+      "id":"button_hover_color",
+      "label":"Button hover color"
+    },
+      {
+      "type":"select",
+      "id":"text_alignment",
+      "label":"Text alignment",
+      "options":[
+        {
+          "value":"left",
+          "label":"left"
+        },
+        {
+          "value":"center",
+          "label":"center"
+        },
+        {
+          "value":"right",
+          "label":"right"
+        }
+      ],
+      "default":"center"
+    }
+  ],
+  "presets" : [
+    {
+      "name" : "Richtext Section One"
+    }
+  ]
+}
+{% endschema %}

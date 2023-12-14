@@ -1,0 +1,178 @@
+<div class="image-text conatiner">
+  <div class="flexbox {{ section.settings.image_position }}">
+    <div class="flexbox__item image-text__item">
+      <div class="image-text__image">
+        {% assign mobile_image = section.settings.image_mobile | default: section.settings.image %}
+        {% render 'image-code', class: 'media media--square', mobileSrc: mobile_image, desktopSrc: section.settings.image %}
+      </div>
+    </div>
+    <div class="flexbox__item">
+      <div class="image-text__content {{ section.settings.text_alignment }}">
+        {% if section.settings.caption_text != blank %}
+          <h5 class="caption-text">{{ section.settings.caption_text }}</h5>
+        {% endif %}
+        
+        {% if section.settings.heading_text != blank %}
+          <h4 class="heading-text">{{ section.settings.heading_text }}</h4>
+        {% endif %}
+        
+        {% if section.settings.paragraph_text != blank %}
+          <div class="paragraph-text">{{ section.settings.paragraph_text }} </div>
+        {% endif %}
+       
+        {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+        <div class="image__button">
+          <a class="button button--primary" href="{{ section.settings.button_link }}">
+            {{ section.settings.button_text }}
+          </a>
+        </div>
+      {% endif %}
+        
+      </div>
+      </div>
+    </div>
+</div>
+
+{% style %}
+.image-text__item{
+  overflow:hidden;
+}
+  .image-text__image{
+    transition:all 5s;
+  }
+  .image-text__image:hover{
+    scale:1.5;
+  }
+  .paragraph-text {
+    color: {{ section.settings.paragraph_text_color }};
+  }
+
+.image-text__content{
+  padding:30px 0 0;
+}
+@media only screen and (min-width: 990px) {
+  .image-text__content{
+    padding:30px;
+  }
+}
+.direction-row{
+  flex-direction:row;
+}
+.direction-row-reverse{
+  flex-direction:row-reverse;
+}
+.caption-text{
+  line-height:1.5;
+}
+
+
+
+{% endstyle %}
+
+
+
+{% schema %}
+  {
+  "name": "Image with text Two",
+  "tag": "section",
+  "class": "homepage-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Image settings"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "1200 x 500px .jpg recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Image (Mobile)",
+      "info": "600 x 800px .jpg recommended"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position",
+      "options": [
+        {
+          "value": "direction-row",
+          "label": "Left"
+        },
+        {
+          "value": "direction-row-reverse",
+          "label": "Right"
+        }
+      ],
+      "default": "direction-row"
+    },
+    {
+      "type": "header",
+      "content": "Content settings"
+    },
+    {
+      "type": "text",
+      "id": "caption_text",
+      "label": "Caption text",
+      "default": "Cleansers"
+    },
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Heading text",
+      "default": "ONLY THE BEST"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph_text",
+      "label": "Paragraph text",
+      "default": "<p> We're humans too and we understand that skin care and cosmetics should rejuvenate and rehydrate in the short and long run.</p>"
+    },
+    {
+      "type":"color",
+      "id":"paragraph_text_color",
+      "label":"Paragraph text color"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Explore our shop"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value":"text-left",
+          "label":"Left"
+        },
+        {
+          "value":"text-center",
+          "label":"Center"
+        },
+        {
+          "value":"text-right",
+          "label":"Right"
+        }
+      ],
+      "default":"text-center"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image with text Two"
+    }
+  ]
+}
+  
+{% endschema %}

@@ -1,0 +1,212 @@
+{% if section.blocks.size > 0 %}
+  <div class="image-gallery container">
+    <div class="flexbox">
+      {% for block in section.blocks %}
+        <div class="flexbox__item">
+          <div class="image-item">
+            <div class="image-item__image">
+              {% if block.settings.image != blank %}
+                {% assign mobile_image = block.settings.image_mobile | default: block.settings.image %}
+                {% render 'image-code', mobileSrc: mobile_image, desktopSrc: block.settings.image %}
+              {% endif %}
+            </div>
+            <div class="image-item__content">
+              <div class="image-items flex {{ block.settings.content_position }}">
+                <div class="image-items_text {{ block.settings.text_alignment }}">
+                  {% if block.settings.heading_text != blank %}
+                    <h2 class="image-text__heading heading-{{ block.id }}">{{ block.settings.heading_text }}</h2>
+                  {% endif %}
+
+                  {% if block.settings.paragraph_text != blank %}
+                    <div class="image-text__paragraph paragraph-{{ block.id }}">
+                      {{ block.settings.paragraph_text }}
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.button_text != blank and block.settings.button_link != blank %}
+                    <div class="image-text__button">
+                      <a class="button button--primary button-{{ block.id }}" href="{{ block.settings.button_link }}">
+                        {{ block.settings.button_text }}
+                      </a>
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+{% style %}
+    {% for block in section.blocks %}
+    .heading-{{ block.id }} {
+      color: {{ block.settings.heading_text_color }};
+    }
+    .paragraph-{{ block.id }} {
+      color: {{ block.settings.paragraph_text_color }};
+    }
+
+    .image-gallery .flexbox__item {
+       width: 100%;
+      }
+
+     .image-item {
+       position: relative;
+  }
+
+  .image-item__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+
+  @media only screen and (min-width: 990px) {
+    .image-gallery .flexbox__item {
+      width: 33.33%;
+    }
+  }
+  .image-items{
+      height:100%;
+  }
+  .image-items_text{
+      max-width:300px;
+  }
+
+  {% endfor %}
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "image gallery Three",
+  "tag": "section",
+  "class": "homepage-section",
+  "blocks": [
+    {
+      "type": "image-gallery",
+      "name": "image block",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "1200 x 500px .jpg recommended"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Image (Mobile)",
+          "info": "600 x 800px .jpg recommended"
+        },
+        {
+          "type": "text",
+          "id": "heading_text",
+          "label": "Heading text",
+          "default": "Beautiful,natural skin"
+        },
+        {
+          "type":"color",
+          "id":"heading_text_color",
+          "label":"Heading text color"
+        },
+        {
+          "type": "richtext",
+          "id": "paragraph_text",
+          "label": "Paragraph text",
+          "default": "<p>100% organic products to rejenevate and rehydrate</p>"
+        },
+        {
+          "type":"color",
+          "id":"paragraph_text_color",
+          "label":"Paragraph text color"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "shop Now"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "Text alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "content_position",
+          "label": "Content position",
+          "options": [
+            {
+              "value": "align-start justify-start",
+              "label": "Top left"
+            },
+            {
+              "value": "align-start justify-center",
+              "label": "Top center"
+            },
+            {
+              "value": "align-start justify-end",
+              "label": "Top right"
+            },
+            {
+              "value": "align-center justify-start",
+              "label": "Middle left"
+            },
+            {
+              "value": "align-center justify-center",
+              "label": "Middle center"
+            },
+            {
+              "value": "align-center justify-end",
+              "label": "Middle right"
+            },
+            {
+              "value": "align-end justify-start",
+              "label": "Bottom left"
+            },
+            {
+              "value": "align-end justify-center",
+              "label": "Bottom center"
+            },
+            {
+              "value": "align-end justify-end",
+              "label": "Bottom right"
+            }
+          ],
+          "default": "align-start justify-start"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "image gallery Three"
+    }
+  ]
+}
+{% endschema %}

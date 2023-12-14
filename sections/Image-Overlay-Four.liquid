@@ -1,0 +1,195 @@
+<div data-flickity='{ "autoPlay": true , "pageDots" : false,"prevNextButtons": false,"imagesLoaded": true}'>
+  {% for block in section.blocks %}
+    <div class="image-overlay" >
+       <div class="image-overlay--image image-galley-item">
+          {% if block.settings.image != null %}
+          {% render 'image-code', mobileSrc: block.settings.image, desktopSrc: block.settings.image %}
+          {% endif %}
+       </div>
+      <div class="image__overlay image-gallery-item__content">
+        <div class="flex {{ block.settings.content_position }}">
+            <div class="max-width {{ block.settings.text_alignment }}">
+                  {% if block.settings.heading_text != blank %}
+                    <h5 class="heading_text">{{ block.settings.heading_text }}<h5/>
+                  {% endif %}
+    
+                  {% if block.settings.caption_text != blank %}
+                      <h6 class="caption">{{ block.settings.caption_text }}</h6>
+                  {% endif %}
+        
+                  {% if block.settings.paragraph_text != blank %}
+                  <div class="paragraph"> {{ block.settings.paragraph_text }}</div>
+                  {% endif %}
+        
+                  {% if block.settings.button_text != blank and block.settings.button_link != blank %}
+                  <div class="image-text__button">
+                  <a class="button button--primary button-{{ block.id }}" href="{{ block.settings.button_link }}">
+                    {{ block.settings.button_text }}
+                  </a>
+                  </div>
+                  {% endif %}
+            </div> 
+        </div>
+      </div>
+   </div>
+  {% endfor %}
+</div>
+
+{% style %}
+  {% for block in section.blocks %}
+  .heading_text{
+    color: {{ block.settings.heading_text_color }};
+    line-height:2;
+  }
+  .caption{
+    color: {{ block.settings.caption_text_color }};
+  }
+  .paragraph{
+    color:{{block.settings.paragraph_text_color}}
+  }
+{% endfor %}}
+{% endstyle %}
+
+
+                      
+{% schema %}
+  {
+    "name": "Slide show",
+    "tag":"section",
+    "class":"homepage-section",
+    "limit":2,
+    "blocks": [
+      {
+        "type": "image-overlay",
+ 		"name": "image block",
+ 		"settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image",
+            "info": "1200 x 500px .jpg recommended"
+          },
+          {
+            "type": "image_picker",
+             "id": "image_mobile",
+             "label": "Image (Mobile)",
+            "info": "600 x 800px .jpg recommended"
+          },
+          {
+            "type": "text",
+            "id": "heading_text",
+            "label":"Heading Text",
+            "default": "CLEAN AND AFFORDABLE BEAUTY"
+          },
+          {
+            "type":"color",
+            "id":"heading_text_color",
+            "label":"Heading text color"
+          },
+          {
+            "type": "text",
+            "id": "caption_text",
+            "label":"Caption text",
+            "default": "Beautiful,natural skin"
+          },
+          {
+            "type":"color",
+            "id":"caption_text_color",
+            "label":"Caption text color"
+          },
+          {
+            "type": "richtext",
+            "id": "paragraph_text",
+            "label":"Paragraph text",
+            "default": "<p>100% organic products to rejenevate and rehydrate</p>"
+          },
+          {
+            "type":"color",
+            "id":"paragraph_text_color",
+            "label":"Paragraph text color"
+          },
+          {
+            "type": "text",
+            "id": "button_text",
+             "label": "shop Now"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+             "label": "Button Link"
+          },
+          {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "Text alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "content_position",
+          "label": "Content position",
+          "options": [
+            { 
+              "value": "align-start justify-start", 
+              "label": "Top left" 
+            },
+            { 
+              "value": "align-start justify-center", 
+              "label": "Top center" 
+            },
+            { 
+              "value": "align-start justify-end",
+              "label": "Top right" 
+            },
+            { 
+              "value": "align-center justify-start", 
+              "label": "Middle left" 
+            },
+            { 
+              "value": "align-center justify-center", 
+              "label": "Middle center" 
+            },
+            { 
+              "value": "align-center justify-end", 
+              "label": "Middle right" 
+            },
+            { 
+              "value": "align-end justify-start", 
+              "label": "Bottom left" },
+            { 
+              "value": "align-end justify-center", 
+              "label": "Bottom center" 
+            },
+            { 
+              "value": "align-end justify-end", 
+              "label": "Bottom right" 
+            }
+          ],
+          "default": "align-start justify-start"
+        }
+      ]
+    }
+  ],
+
+    "presets": [
+      {
+        "name": "Slide show"
+      }
+    ]
+      
+  }
+{% endschema %}
